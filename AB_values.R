@@ -8,9 +8,9 @@ library(ggplot2)
 #                  IgG_RBD=c(0.2, NA, 1.63, 1.34, NA, 2.14),
 #                  )
 
-dt <- data.table (dates=as.Date(c("2020-06-17", "2021-03-20", "2021-05-05", "2021-06-01", "2021-06-05", "2021-07-07", format(Sys.time(), "%Y-%m-%d"))),
-                  what=c("AB test", "vaccine", "AB test", "AB test", "vaccine", "AB test", "today"),
-                  IgG_RBD=c(0.2, NA, 1.63, 1.34, NA, 2.14, NA))
+dt <- data.table (dates=as.Date(c("2020-06-17", "2021-03-20", "2021-05-05", "2021-06-01", "2021-06-05", "2021-07-07", "2021-08-09", format(Sys.time(), "%Y-%m-%d"))),
+                  what=c("AB test", "vaccine", "AB test", "AB test", "vaccine", "AB test", "AB test", "today"),
+                  IgG_RBD=c(0.2, NA, 1.63, 1.34, NA, 2.14, 1.52, NA))
 
 for (i in dt[what=='vaccine', which=T]) { dt[i, IgG_RBD:=dt[i-1, IgG_RBD]] }
 
