@@ -1,0 +1,13 @@
+date	type	IgG_RBD	comment
+2020-06-17	AB test	0.2	first AB test, assuming value is constant until first vaccine as no infection has occurred
+2021-03-20	Astra Zeneca	NA	1st vaccine
+2021-05-05	AB test	1.63
+2021-06-01	AB test	1.34
+2021-06-05	Astra Zeneca	NA	2nd vaccine
+2021-07-07	AB test	2.14
+2021-08-09	AB test	1.52
+2021-08-31	AB test	1.49
+2021-10-06	AB test	1.01
+2021-11-09	AB test	0.86
+2021-12-09	BioNTech/Pfizer	NA	3rd vaccine
+2021-12-14	AB test	6.67
