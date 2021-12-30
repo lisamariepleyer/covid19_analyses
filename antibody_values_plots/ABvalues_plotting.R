@@ -73,6 +73,6 @@ titerplot <- ggplot(data=dt[!is.na(IgG_RBD)]) +
 
 
 
-pdf('ABvalues_output.pdf', height = plot.height, width = 5)
+pdf(paste0("ABvalues_output_",format(Sys.time(), "%Y-%m-%d"), ".pdf"), height = plot.height, width = 5)
 titerplot
 dev.off()
